@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket messages</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Сообщения</h1>
+
+    <div class="status" id="status">Подключение...</div>
+
+    <form id="message-form">
+        <input
+            id="message-input"
+            type="text"
+            placeholder="Введите сообщение"
+            autocomplete="off"
+        >
+        <button type="submit">Отправить</button>
+    </form>
+
+    <div class="error" id="error"></div>
+
+    <ol id="messages"></ol>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
